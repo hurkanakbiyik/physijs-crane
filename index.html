@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+	<title>Dźwig z Three.js oraz Physijs</title>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+
+	<link rel="stylesheet" type="text/css" href="css/styles.css" />
+	
+	<script type="text/javascript" src="js/three.min.js"></script>
+	<script type="text/javascript" src="js/OrbitControls.js"></script>
+	<script type="text/javascript" src="js/stats.min.js"></script>
+	<script type="text/javascript" src="js/simplex-noise.js"></script>
+	<script type="text/javascript" src="js/physi.js"></script>
+	<script type="text/javascript" src="js/crane_minigame.js"></script>
+
+</head>
+
+<body>
+	<div id="heading">
+		<div>parking break:<span id="break">OFF</span></div>
+		<div>score:<span id="score">0</span></div>
+	</div>
+	<!--<div style="position: absolute; margin-top: 10px; margin-left: 50%; z-index: 101">parking break:<span id="break">OFF</span></div>
+	<div style="position: absolute; margin-top: 30px; margin-left: 50%; z-index: 101">score:<span id="score">0</span></div>-->
+	<div style="position: absolute; margin-top: 100px; margin-left: 10px; z-index: 101">
+		Sterowanie:<br />
+		Z/X: Obrót lewo/prawo<br />
+		Q/A: Pierwsze ramię góra/dół<br />
+		W/S: Drugie ramię góra/dół<br />
+		E/D: Trzecie ramię góra/dół<br />
+		R/F: Kleszcze otwieranie/zamykanie<br />
+		+/-: Podpory otwieranie/zamykanie<br />
+		<br />
+		Numpad 8: do przodu<br />
+		Numpad 2: do tyłu<br />
+		Numpad 6: w prawo<br />
+		Numpad 4: w lewo<br />
+		Numpad 5: hamulec<br />
+		P: hamulec ręczy włącz/wyłącz<br />
+	</div>
+	<div id="viewport"></div>
+</body>
+
+</html>
